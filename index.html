@@ -7,7 +7,14 @@
     <input type="file" id="fileInput" accept="image/*" />
     <button onclick="convertToBase64()">Convert</button>
     <div id="base64Output"></div>
-
+    <p>function displayImageFromBase64(base64String) { <br>
+  // Create balise img
+  const imgElement = document.createElement("img"); <br>
+  // Assign Base64 string to image source
+  imgElement.src = base64String; <br>
+  // Do whatever you want with the image, for example, add it to the DOM
+  document.body.appendChild(imgElement); <br>
+}</p>
     <script>
       function convertToBase64() {
         const fileInput = document.getElementById("fileInput");
